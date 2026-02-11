@@ -74,7 +74,7 @@ const cargarRepositorios = async () => {
             // Link de GitHub Pages
             let pagesLink = '';
             if (repo.has_pages) {
-                pagesLink = `<a href="${githubPagesUrl}" target="_blank" class="pages-link">Ver GitHub Pages →</a>`;
+                pagesLink = `<a href="${githubPagesUrl}" target="_blank" class="pages-link">Ver GitHub Pages</a>`;
             }
             
             repoCard.innerHTML = `<h3>${repo.name}</h3>
@@ -83,7 +83,7 @@ const cargarRepositorios = async () => {
                     <span>Fecha: ${fechaActualizacion}</span>
                 </div>
                 <div class="repo-links">
-                    <a href="${repo.html_url}" target="_blank" class="repo-link">Ver en GitHub →</a>
+                    <a href="${repo.html_url}" target="_blank" class="repo-link">Ver en GitHub</a>
                     ${pagesLink}
                 </div>`;
             reposDiv.appendChild(repoCard);
