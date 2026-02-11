@@ -80,9 +80,7 @@ const cargarRepositorios = async () => {
             repoCard.innerHTML = `<h3>${repo.name}</h3>
                 <p>${repo.description || 'Sin descripción'}</p>
                 <div class="repo-stats">
-                    <span>${repo.stargazers_count}</span>
-                    <span>${repo.forks_count}</span>
-                    <span>${fechaActualizacion}</span>
+                    <span>Fecha: ${fechaActualizacion}</span>
                 </div>
                 <div class="repo-links">
                     <a href="${repo.html_url}" target="_blank" class="repo-link">Ver en GitHub →</a>
