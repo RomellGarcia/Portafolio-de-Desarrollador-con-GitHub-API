@@ -77,6 +77,7 @@ const cargarRepositorios = async () => {
                 pagesLink = `<a href="${githubPagesUrl}" target="_blank" class="pages-link">Ver GitHub Pages</a>`;
             }
             
+            
             repoCard.innerHTML = `<h3>${repo.name}</h3>
                 <p>${repo.description || 'Sin descripción'}</p>
                 <div class="repo-stats">
