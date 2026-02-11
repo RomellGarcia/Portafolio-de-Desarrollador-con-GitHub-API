@@ -1,0 +1,159 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #161b22;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 1px solid #30363d;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    color: #58a6ff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.contenedor-perfil {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.perfil-info {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.perfil-info img.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #58a6ff;
+}
+
+.perfil-info h2 {
+    color: #58a6ff;
+    margin-bottom: 0.5rem;
+}
+
+.perfil-info p {
+    margin: 0.3rem 0;
+    color: #8b949e;
+}
+
+.perfil-info a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+.perfil-info a:hover {
+    text-decoration: underline;
+}
+
+.contenedor-perfil > h2 {
+    color: #c9d1d9;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.repositorios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.repo-card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.repo-card:hover {
+    transform: translateY(-3px);
+    border-color: #58a6ff;
+}
+
+.repo-card h3 {
+    color: #58a6ff;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.repo-card p {
+    color: #8b949e;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    min-height: 40px;
+}
+
+.repo-stats {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    color: #8b949e;
+}
+
+.repo-stats span::before {
+    margin-right: 0.3rem;
+}
+
+.repo-link {
+    display: inline-block;
+    color: #58a6ff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.repo-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #161b22;
+    border-top: 1px solid #30363d;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+footer p {
+    color: #8b949e;
+    font-size: 0.9rem;
+}
+
+.repo-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.pages-link {
+    display: inline-block;
+    color: #ff6b6b;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.pages-link:hover {
+    text-decoration: underline;
+}
